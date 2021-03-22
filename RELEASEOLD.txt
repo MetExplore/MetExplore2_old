@@ -1,0 +1,337 @@
+[Features]
+
+2.13.0 :
+
+Add documentation
+Add demo for mapping, curation and collaborative work
+Add user agreements
+Add MetaboRank
+
+[Issues]
+
+2.13.1 :
+
+Set default PubChem URL for access compounds
+
+2.13.2 :
+
+Keep in account zero values when sorting mapping
+
+2.13.3 :
+
+Remove doc link from excel export
+
+2.13.4 & 2.13.5 :
+
+Correct an issue when use data with mapping to put weight in MetaboRank algorithms
+
+2.13.6 :
+
+Correct an issue when selection mapping condition for MetaboRank & update Met4JBinding jar
+
+2.13.7 :
+
+Correct an issue when clicking on node in network visualization
+
+2.13.8 :
+
+Correct an issue when clicking on node in network visualization
+
+2.13.9 :
+
+Correct an issue when clicking on node in network visualization
+
+2.13.10 :
+
+Correct an issue when clicking on node in network visualization
+
+2.13.11 :
+
+Correct an issue when clicking on node in network visualization
+
+2.13.12 :
+
+Correct an issue when clicking on node in network visualization
+
+2.13.13 :
+
+Correct an issue when clicking on node in network visualization
+
+2.13.14 :
+
+Correct an issue when clicking on node in network visualization
+
+2.13.15 :
+
+Correct an issue when clicking on node in network visualization
+
+2.13.16 :
+
+Correct an issue when clicking on node in network visualization
+
+2.13.17 :
+
+Time for importing a sbml file highly reduced by optimizing pubmed web service calls
+Correct an issue when exporting a reaction associated to an enzyme not associated to any gene. When there was enzyme associated to a reaction but without genes behind, it wrote <fbc:geneProductAssociation/> in the SBML, what is not compliant with SBML validator.
+
+2.13.18 & 2.13.19 :
+
+Init release.txt file usage
+
+2.13.20
+
+Release
+
+2.13.21
+
+Fixes
+
+
+2.13.21
+
+test
+
+2.13.21
+
+14th
+
+
+2.13.21
+
+17
+
+
+2.13.21
+
+23th
+
+
+2.13.21
+
+25th
+
+
+2.13.21
+
+26th
+
+
+2.13.22
+
+MetaboRank
+
+
+2.13.23
+
+Fix
+
+smtp
+
+2.13.24
+
+change
+
+
+2.13.24
+
+MetExplore long jobs (import/export, flux analyses, etc...) are now handled by a queue system. 
+
+
+2.13.25
+
+php bug
+
+
+2.14.0
+
+Add Aliases on biological components and add MeSH mining analysis
+
+
+2.14.1
+
+Hotfix on MetExploreVz
+
+
+2.14.1
+
+master
+
+
+2.14.1
+
+Copy_metexplore-master_to_prod2
+
+
+2.14.1
+
+test
+
+
+2.14.3
+
+Teste
+
+
+2.14.4
+
+Correct application name 
+Correct bug when short job 
+Correct some incorrect calls into jobs
+
+
+2.14.5
+
+Change default smtp in MetExploreJava
+
+
+
+Fix issue about gene protein reaction associations in SBML IO
+
+
+2.14.6
+
+Fix bug about flux bounds in SBML I/O
+
+
+2.14.7
+
+Fix Inifnite and null bounds SBML I/O bug
+
+
+2.14.8
+
+Fix bugs in SBML I/O
+
+
+2.14.12
+
+"Fix bounds & fva on filter grid & Set message from biosource & about link on"
+
+
+2.14.18
+
+Set toolbar interaction & set registration link & fix equation bug & disable Metab2MeSH features if Metab2MeSH is down
+
+
+2.14.19
+
+equation debug filter
+
+
+2.14.20
+
+user connexion joomla cryptage
+
+
+2.15.0
+
+Upgrade MetExploreViz to 2.0
+	Discretisation of fluxes continuous values 
+	Curvy drawing
+	Detect and import cycle
+	Map images
+	Edition mode 
+	ShortCut
+	Map suggestions
+
+
+2.15.1
+
+Upgrade MetExploreViz 2.0.2
+
+
+2.15.2
+
+Upgrade MetExploreViz to get hotfix on cycle import 
+
+
+2.15.3
+
+Set checking of Metab2MeSH API & generify aam checking for metaborank
+
+
+2.15.4
+
+Upgrade MetExploreViz to 2.0.3 : Fix convexhull for pathways
+
+
+2.15.5
+
+Upgrade MetExploreViz to 2.0.3 : Fix convexhull for pathways
+
+
+2.15.6
+
+Upgrade metExploreViz to 2.1.1 :  fix alignment & add reverse feature & fix logo duplication & set drawing parameters location
+
+
+2.15.7
+
+Upgrade MetExploreViz 2.2.0 : Highlight wall and source & fix problem to see exchange reversible reactions
+
+
+2.15.8
+
+Use Slurm for MetaboRank
+
+
+2.16.0
+
+Upgrade MetExploreViz to 2.2.2 : revert last align updates & set zoom max for labels & improve rescale & improve highlight
+equation reaction (temps latence)
+
+
+2.16.1
+
+Add multimapping : 
+    -> Map on external ids
+    -> Map on ChEBI classes
+
+
+2.16.2
+
+Add pathway enrichment tacking account a chemical librarie
+
+
+2.16.3
+
+Remove mesh analyses & set tooltips
+
+
+2.16.4
+
+hotfix
+
+
+2.16.5
+
+hotfix
+
+
+2.16.6
+
+lipids id 
+
+
+2.17.0
+
+Upgrade MetExploreViz version.
+Allows to see pathways on links
+
+2.18.0
+
+Fix pathways enrichment bug
+remove neutral monoisotopic mass
+
+
+2.18.1
+
+Upgrade MetExploreViz to 2.3.2 to fix bug on multiple selection
+
+
+2.18.2
+
+hotfix atommapping file
+hotfix multimapping
+
+Now see RELEASE.txt

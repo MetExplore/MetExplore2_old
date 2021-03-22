@@ -1,0 +1,21 @@
+.team {
+	background-image: url(../icons/team.svg) !important;
+	background-size: 100% 100%;
+	background-position: 0% 0%;
+	background-repeat: no-repeat;
+}
+
+.reset {
+	background-image: url(../icons/refresh.svg) !important;
+	background-size: 100% 100%;
+	background-position: 0% 0%;
+	background-repeat: no-repeat;
+}
+
+
+.reply {
+	background-image: url(../icons/pencil.svg) !important;
+	background-size: 100% 100%;
+	background-position: 0% 0%;
+	background-repeat: no-repeat;
+}

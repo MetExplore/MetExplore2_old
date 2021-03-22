@@ -1,0 +1,23 @@
+ image: appropriate/curl
+ job:
+  script: 
+    - curl -i -X POST  --user $user_jenkins:$key_jenkins "http://vm-metexplore-dev.toulouse.inra.fr:8080/job/feature_to_www/buildWithParameters?branche=$CI_COMMIT_REF_NAME"
+  only:
+    variables:
+      # Launch only when tag #buildontest is include in commit message
+      - $CI_COMMIT_MESSAGE =~ /#buildontest/
+
+ # Launch http://vm-metexplore-dev.toulouse.inra.fr:8080/job/Build-Metexplore-master/build jenkins job only when master branch is pushed
+ buildmaster:
+    script: 
+      - curl -i -X POST  --user $user_jenkins:$key_jenkins "http://vm-metexplore-dev.toulouse.inra.fr:8080/job/Build-Metexplore-master/build"
+    only:
+     refs:
+      - master
+ builddevelop:
+    script: 
+      - curl -i -X POST  --user $user_jenkins:$key_jenkins "http://vm-metexplore-dev.toulouse.inra.fr:8080/job/Build-Metexplore-develop/build"
+    only:
+     refs:
+      - develop
+

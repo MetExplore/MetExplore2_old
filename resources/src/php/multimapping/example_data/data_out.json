@@ -1,0 +1,117 @@
+[
+    {
+        "name": "M1",
+        "undefined": "",
+        "chebi": "15756",
+        "mapped": [
+            {
+                "path": [
+                    "15756"
+                ],
+                "datasetname": "M1",
+                "idsql": [
+                    "7236116"
+                ],
+                "networkid": "M_hdca_x",
+                "mapping_type": "chebi class mapping",
+                "distance": "-0.1",
+                "identifiers": {
+                    "chebi": [
+                        "7896",
+                        "7896"
+                    ]
+                }
+            },
+            {
+                "path": [
+                    "15756"
+                ],
+                "datasetname": "M1",
+                "idsql": [
+                    "7236408"
+                ],
+                "networkid": "M_hdca_e",
+                "mapping_type": "chebi class mapping",
+                "distance": "-0.1",
+                "identifiers": {
+                    "chebi": [
+                        "7896",
+                        "7896"
+                    ]
+                }
+            },
+            {
+                "path": [
+                    "15756"
+                ],
+                "datasetname": "M1",
+                "idsql": [
+                    "7236411"
+                ],
+                "networkid": "M_hdca_c",
+                "mapping_type": "chebi class mapping",
+                "distance": "-0.1",
+                "identifiers": {
+                    "chebi": [
+                        "7896",
+                        "7896"
+                    ]
+                }
+            },
+            {
+                "path": [
+                    "15756"
+                ],
+                "datasetname": "M1",
+                "idsql": [
+                    "7236416"
+                ],
+                "networkid": "M_hdca_l",
+                "mapping_type": "chebi class mapping",
+                "distance": "-0.1",
+                "identifiers": {
+                    "chebi": [
+                        "7896",
+                        "7896"
+                    ]
+                }
+            },
+            {
+                "path": [
+                    "15756"
+                ],
+                "datasetname": "M1",
+                "idsql": [
+                    "7236417"
+                ],
+                "networkid": "M_hdca_r",
+                "mapping_type": "chebi class mapping",
+                "distance": "-0.1",
+                "identifiers": {
+                    "chebi": [
+                        "7896",
+                        "7896"
+                    ]
+                }
+            },
+            {
+                "path": [
+                    "15756"
+                ],
+                "datasetname": "M1",
+                "idsql": [
+                    "7236435"
+                ],
+                "networkid": "M_hdca_b",
+                "mapping_type": "chebi class mapping",
+                "distance": "-0.1",
+                "identifiers": {
+                    "chebi": [
+                        "7896",
+                        "7896"
+                    ]
+                }
+            }
+        ]
+    }
+]

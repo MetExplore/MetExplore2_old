@@ -1,0 +1,377 @@
+.title-subpanel {
+    font-weight: bold;
+    font-size: 10pt;
+}
+
+.user-name {
+    font-size: 15pt;
+}
+
+.user-logout {
+	background-image: url(../icons/signout.svg);
+    background-size: 100% 100%;
+    background-position: 0% 0%;
+    background-repeat: no-repeat;
+}
+
+.width_100 {
+    width: 100%;
+}
+
+.button-help {
+    background-image: url(../icons/help.svg) !important;
+    width: 100%;
+    background-size: 25px 25px;
+    background-position: 1.5px 1.5px;
+    background-repeat: no-repeat;
+}
+
+.button-start {
+    background-image: url(../icons/play.svg) !important;
+    background-size: 20px 20px;
+    background-position: 1.5px 1.5px;
+    background-repeat: no-repeat;
+}
+
+.button-stop {
+    background-image: url(../icons/stop.svg) !important;
+    background-size: 20px 20px;
+    background-position: 1.5px 1.5px;
+    background-repeat: no-repeat;
+}
+
+.button-cancel {
+    background-image: url(../icons/cancel.svg) !important;
+    background-size: 20px 20px;
+    background-position: 1.5px 1.5px;
+    background-repeat: no-repeat;
+}
+
+.button-done {
+    background: #9FF781;
+    background-image: url(../icons/done.svg) !important;
+    background-size: 20px 20px;
+    background-position: 1.5px 1.5px;
+    background-repeat: no-repeat;
+}
+
+.button-done:hover {
+    background: #E3F6CE;
+    background-image: url(../icons/done.svg) !important;
+    background-size: 20px 20px;
+    background-position: 1.5px 1.5px;
+    background-repeat: no-repeat;
+}
+
+.button-done:active {
+    background: #3ADF00;
+    background-image: url(../icons/done.svg) !important;
+    background-size: 20px 20px;
+    background-position: 1.5px 1.5px;
+    background-repeat: no-repeat;
+}
+
+.button-personal {
+    background-image: url(../icons/me.svg) !important;
+    background-size: 20px 20px;
+    background-position: 7.5px 1.5px;
+    background-repeat: no-repeat;
+}
+
+.button-personal .x-btn-inner {
+    margin-left: 12px;
+}
+
+.button-all {
+    background-image: url(../icons/team2.svg) !important;
+    background-size: 20px 20px;
+    background-position: 12px 1.5px;
+    background-repeat: no-repeat;
+}
+
+.button-plus {
+    background: #81DAF5;
+    background-image: url(../icons/add.svg) !important;
+    background-size: 20px 20px;
+    background-position: 1.5px 1.5px;
+    background-repeat: no-repeat;
+}
+
+.button-plus .x-btn-inner {
+    font-size: 20pt !important;
+}
+
+.button-plus:hover {
+    background: #CEF6F5;
+    background-image: url(../icons/add.svg) !important;
+    background-size: 20px 20px;
+    background-position: 1.5px 1.5px;
+    background-repeat: no-repeat;
+}
+
+.button-plus:active {
+    background: #2E9AFE;
+    background-image: url(../icons/add.svg) !important;
+    background-size: 20px 20px;
+    background-position: 1.5px 1.5px;
+    background-repeat: no-repeat;
+}
+
+.button-minus {
+    background: #F7819F;
+    background-image: url(../icons/delete.svg) !important;
+    background-size: 20px 20px;
+    background-position: 1.5px 1.5px;
+    background-repeat: no-repeat;
+}
+
+.button-minus .x-btn-inner {
+    font-size: 20pt !important;
+}
+
+.button-minus:hover {
+    background: #F6CED8;
+    background-image: url(../icons/delete.svg) !important;
+    background-size: 20px 20px;
+    background-position: 1.5px 1.5px;
+    background-repeat: no-repeat;
+}
+
+.button-minus:active {
+    background: #FE2E64;
+    background-image: url(../icons/delete.svg) !important;
+    background-size: 20px 20px;
+    background-position: 1.5px 1.5px;
+    background-repeat: no-repeat;
+}
+
+.titleField {
+    font-weight: bold;
+}
+
+.todoUrgent .x-grid-cell {
+    background-color: #ca8686 !important;
+}
+
+.projectInactive .x-grid-cell {
+    background-color: #a1a1a1 !important;
+}
+
+.projectModified .x-grid-cell {
+    background-color: #4eacc4 !important;
+}
+
+.title-login {
+    font-size: 30pt;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.title-add-new-user {
+    font-size: 18pt;
+    font-weight: bold;
+    margin: -5px 0px 20px 0px;
+}
+
+.add-user {
+    background-image: url(../icons/add.svg);
+    background-size: 100% 100%;
+    background-position: 0% 0%;
+    background-repeat: no-repeat;
+}
+
+.delete-user {
+    background-image: url(../icons/delete.svg);
+    background-size: 100% 100%;
+    background-position: 0% 0%;
+    background-repeat: no-repeat;
+}
+
+.reset-users {
+    background-image: url(../icons/refresh.svg);
+    background-size: 20px 20px;
+    background-position: 10px 0px;
+    background-repeat: no-repeat;
+    width: 80px;
+}
+
+.reset-users .x-btn-inner {
+    margin-left: 26px;
+}
+
+.legend {
+    background-image: url(../icons/list.svg);
+    background-size: 20px 20px;
+    background-position: 5px 0px;
+    background-repeat: no-repeat;
+    width: 80px;
+}
+
+.legend .x-btn-inner {
+    margin-left: 24px;
+}
+
+.stopForce {
+    background-image: url(../icons/stop.svg);
+    background-size: 20px 20px;
+    background-position: 5px 0px;
+    background-repeat: no-repeat;
+    width: 80px;
+}
+
+.stopForce .x-btn-inner {
+    margin-left: 24px;
+}
+
+.add-project {
+    background-image: url(../icons/add.svg);
+    background-size: 100% 100%;
+    background-position: 0% 0%;
+    background-repeat: no-repeat;
+}
+
+.delete-project {
+    background-image: url(../icons/delete.svg);
+    background-size: 100% 100%;
+    background-position: 0% 0%;
+    background-repeat: no-repeat;
+}
+
+.unsubscribe-project {
+    background-image: url(../icons/exit.svg);
+    background-size: 100% 100%;
+    background-position: 0% 0%;
+    background-repeat: no-repeat;
+}
+
+.unsubscribe-project .x-btn-inner {
+    margin-left: 27px;
+}
+
+.open-project {
+    background-image: url(../icons/open2.svg);
+    background-size: 100% 100%;
+    background-position: 0% 0%;
+    background-repeat: no-repeat;
+}
+
+.add-attachment {
+    background-image: url(../icons/add.svg);
+    background-size: 20px 20px;
+    background-position: 1px 0px;
+    background-repeat: no-repeat;
+    padding-left: 7px;
+}
+
+.details-attachment {
+    background-image: url(../icons/details.svg);
+    background-size: 20px 20px;
+    background-position: 1px 0px;
+    background-repeat: no-repeat;
+    padding-left: 20px;
+}
+
+.delete-attachment {
+    background-image: url(../icons/delete.svg);
+    background-size: 20px 20px;
+    background-position: 1px 0px;
+    background-repeat: no-repeat;
+    padding-left: 20px;
+}
+
+.form {
+    background: #d6e3f2;
+}
+
+.project-title {
+    font-size: 15pt;
+}
+
+.project-dateC {
+    font-size: 13pt !important;
+    color: #707070;
+}
+
+.close-project {
+	background-image: url(../icons/logout-project.svg);
+    background-size: 100% 100%;
+    background-position: 0% 0%;
+    background-repeat: no-repeat;
+}
+
+.project-button-details {
+    background-image: url(../icons/editproject.svg);
+    background-size: 100% 100%;
+    background-position: 0% 0%;
+    background-repeat: no-repeat;
+}
+
+.button-save-projet {
+    background-image: url(../icons/save.svg);
+    background-size: 100% 100%;
+    background-position: 0% 0%;
+    background-repeat: no-repeat;
+}
+
+.user-edit-profile {
+    background-image: url(../icons/editprofil.svg);
+    background-size: 100% 100%;
+    background-position: 0% 0%;
+    background-repeat: no-repeat;
+}
+
+
+.oldValueInHistory .x-grid-cell {
+    background-color: #ffe2e2;
+    color: #900;
+}
+
+.newValueInHistory .x-grid-cell {
+    background-color: #e2ffe2;
+    color: #090;
+}
+
+.backward-date {
+    background-image: url(../icons/backward.svg);
+    background-size: 27px 18px;
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    width: 30px;
+}
+
+.forward-date {
+    background-image: url(../icons/forward.svg);
+    background-size: 27px 18px;
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    width: 30px;
+}
+
+.show-report {
+    background-image: url(../icons/report.svg);
+    background-size: 20px 20px;
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    width: 70px;
+}
+
+.show-report .x-btn-inner {
+    margin-left: 20px;
+}
+
+.delete-history {
+    background-image: url(../icons/delete.svg);
+    background-size: 20px 20px;
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    width: 70px;
+}
+
+.delete-history .x-btn-inner {
+    margin-left: 20px;
+}
+
+
+/*.valueDiff .x-grid-cell {
+	background-color: yellow !important;
+}*/

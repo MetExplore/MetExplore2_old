@@ -1,0 +1,63 @@
+/* */
+        /* style rows on mouseover */
+        .x-grid-row-over .x-grid-cell-inner {
+            font-weight: bold;
+        }
+        .x-grid-row-selected  .x-grid-cell-inner {
+            background-color: #d8e0f0;
+        }
+        .x-grid-row-del  .x-grid-cell-inner {
+            background-color: #ffa;
+            font-weight: bold;
+        }
+
+        /* shared styles for the ActionColumn icons */
+        .x-action-col-cell img {
+            height: 16px;
+            width: 16px;
+            cursor: pointer;
+        }
+        /* custom icon for the "buy" ActionColumn icon */
+        .x-action-col-cell img.buy-col {
+            background-image: url(../shared/icons/fam/accept.png);
+        }
+        /* custom icon for the "alert" ActionColumn icon */
+        .x-action-col-cell img.alert-col {
+            background-image: url(../shared/icons/fam/error.png);
+        }
+
+        .x-ie6 .x-action-col-cell img.buy-col {
+            background-image: url(../shared/icons/fam/accept.gif);
+        }
+        .x-ie6.x-action-col-cell img.alert-col {
+            background-image: url(../shared/icons/fam/error.gif);
+        }
+
+        .x-ie6 .x-action-col-cell img {
+            position:relative;
+            top:-1px;
+        }
+
+p {
+    margin:5px;
+}
+.settings {
+    background-image:url(../javascript/extjs/examples/shared/icons/fam/folder_wrench.png);
+}
+.nav {
+    background-image:url(../javascript/extjs/examples/shared/icons/fam/folder_go.png);
+}
+.info {
+    background-image:url(../javascript/extjs/examples/shared/icons/fam/information.png);
+}
+.cart {
+    background-image:url(../javascript/extjs/examples/shared/icons/fam/cart.png);
+}
+.del {
+    background-image:url(../javascript/extjs/examples/shared/icons/fam/delete.gif);
+}
+.add {
+    background-image:url(../javascript/extjs/examples/shared/icons/fam/add.gif);
+}
+
+

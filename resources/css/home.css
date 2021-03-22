@@ -1,0 +1,56 @@
+/* ++++++++++++++  blog  ++++++++++++++ */
+#workflow
+{
+	background-image:URL(../images/workflow.jpg);
+  	background-size: 780px 340px;
+	width: 780px;
+	height: 340px;
+	position: relative;
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+	vertical-align: middle;	
+}
+
+.news h2 {
+    color: #555555;
+    font-family: 'Titillium Maps',Arial;
+    font-size:18pt;
+    border-bottom-color: #555555;
+    border-bottom-style: dotted;
+    border-bottom-width: 1px;
+    border-top-color: #555555;
+    border-top-style: dotted;
+    border-top-width: 1px;
+    color: #555555;
+}
+
+.col1 {
+	float:left;
+	font-family: book antiqua,palatino; 
+	text-align:justify;
+	font-size:5pt;
+    width:30%;
+    margin-left:3%;
+    padding:10px 0px;
+}
+.col2 {
+	float:left;
+	font-size: x-small; 
+	font-family: book antiqua,palatino; 
+	text-align:justify;
+	color: #000080;
+    width:30%;
+    margin-left:2%;
+    padding:10px 0px;
+    
+}
+.col3 {
+	float:right;
+    width:30%;
+    margin-right:3%;
+    padding:10px 0px;
+}
+

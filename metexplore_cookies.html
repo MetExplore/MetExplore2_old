@@ -1,0 +1,51 @@
+<html>
+<head>
+<meta http-equiv="Content-Type"
+content="text/html; charset=iso-8859-1">
+<title>MetExplore Cookie</title>
+</head>
+<body>
+<script language="javascript">
+    /**
+     * delete cookies metexplore grid
+     * @param offset
+     * @returns {string}
+     */
+    function getCookieVal(offset) {
+        var endstr=document.cookie.indexOf (";", offset);
+        if (endstr==-1)
+            endstr=document.cookie.length;
+        return unescape(document.cookie.substring(offset, endstr));
+    }
+    function GetCookie (name) {
+        var arg=name+"=";
+        var alen=arg.length;
+        var clen=document.cookie.length;
+        var i=0;
+        while (i<clen) {
+            var j=i+alen;
+            if (document.cookie.substring(i, j)==arg)
+                return getCookieVal (j);
+            i=document.cookie.indexOf(" ",i)+1;
+            if (i==0) break;}
+        return null;
+    }
+    function DeleteCookie (name) {
+        var exp=new Date();
+        exp.setTime (exp.getTime() - 100000);
+        var cval=GetCookie (name);
+        document.cookie=name+"="+cval+"; expires="+exp.toGMTString();
+	}
+
+    DeleteCookie("ext-gridBioSource");
+    DeleteCookie("ext-gridGene");
+    DeleteCookie("ext-gridProtein");
+    DeleteCookie("ext-gridEnzyme");
+    DeleteCookie("ext-gridReaction");
+    DeleteCookie("ext-gridMetabolite");
+    DeleteCookie("ext-gridPathway");
+</script>
+<a href="https://metexplore.toulouse.inra.fr/metexplore2/" target="_self">metexplore</a>
+
+</body>
+</html>

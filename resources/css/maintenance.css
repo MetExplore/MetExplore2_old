@@ -1,0 +1,55 @@
+section {
+    text-align: center;
+}
+
+header {
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+
+.gradient {
+	/* Anciens navigateurs */
+	background: #ffffff url("gradient-bg.png") repeat-x top;
+	-o-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+	/* Internet Explorer */
+	*background: #ffffff;
+	background: #ffffff\0/;
+	filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr=#ff88b6fd, endColorstr=#ffffffff);
+	}
+	@media all and (min-width: 0px) {
+		.gradient {
+			/* Opera */
+			background: rgba(255,255,255,1) url("gradient-bg.svg");
+			/* Navigateurs récents */
+			background-image: -webkit-gradient(
+				linear,
+				left top, left bottom,
+				from(rgba(136,182,253,1)),
+				to(rgba(255,255,255,1))
+			);
+			background-image: -webkit-linear-gradient(
+				top,
+				rgba(136,182,253,1),
+				rgba(255,255,255,1)
+			);
+			background-image: -moz-linear-gradient(
+				top,
+				rgba(136,182,253,1),
+				rgba(255,255,255,1)
+			);
+			background-image: -o-linear-gradient(
+				top,
+				rgba(136,182,253,1),
+				rgba(255,255,255,1)
+			);
+			background-image: linear-gradient(
+				top,
+				rgba(136,182,253,1),
+				rgba(255,255,255,1)
+			);
+		}
+	}

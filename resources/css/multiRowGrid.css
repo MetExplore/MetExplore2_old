@@ -1,0 +1,37 @@
+
+    div.MultirowGrid .x-grid-row .x-grid-cell-inner {
+        white-space: normal;
+    }
+    div.MultirowGrid .x-grid-row-over .MultirowGrid.x-grid-cell-inner {
+        font-weight: bold;
+        white-space: normal;
+    }
+    .x-grid-id-cell {
+        background: url(../images/triangle.gif) no-repeat 0 0;
+        /*background-color: #E0E5EA;*/
+    }
+    /*
+    .x-grid-row .custom-column {
+             background-color: #ecf;
+             color: #090;
+             font-weight: bold;
+         }
+
+
+    .x-grid-cell .id-cell {
+        background-color: blue;
+        color: lightyellow;
+        font-weight: bold;
+    }
+
+    .custom-grid .x-grid-cell {
+        background-color: #ffa;
+        border-bottom-color: #ffc;
+        border-top-color: #ff5;
+        color: #009;
+    }
+
+    .id-cell .id-column .x-grid-cell {
+        background: blue;
+    }
+    */

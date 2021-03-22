@@ -1,0 +1,278 @@
+[Issues] 2.27.5 - Mon Nov 30 15:53:34 CET 2020
+hotfix ec too long
+
+[Issues] 2.27.4 - Mon Nov 30 15:07:58 CET 2020
+Debug import Kegg
+
+[Issues] 2.27.3 - Fri Nov 27 18:01:08 CET 2020
+debug mapping
+
+[Issues] 2.27.2 - Wed Nov 25 16:36:50 CET 2020
+hotfix Metabolite svg
+
+[Issues] 2.27.1 - Mon Nov 23 14:25:13 CET 2020
+hotfix sbmlNote
+
+[Issues] 2.26.31 - Mon Nov 16 14:27:42 CET 2020
+Fix import with non utf8 characters
+
+[Issues] 2.26.29 - Thu Nov  5 15:30:57 CET 2020
+hotfix sbmlexport
+
+[Issues] 2.26.26 - Tue Nov  3 10:28:18 CET 2020
+Rétablit la fonction Copy BioSource
+
+[Issues] 2.26.25 - Mon Nov  2 14:30:11 CET 2020
+Does not check anymore if irreversible reactions have negative bounds during SBML import
+
+[Issues] 2.26.24 - Mon Oct  5 16:59:57 CEST 2020
+hotfix debug export when network from curation
+
+[Issues] 2.26.23 - Mon Oct  5 12:19:20 CEST 2020
+Debug export sbml
+
+[Issues] 2.26.22 - Tue Jun 30 17:46:07 CEST 2020
+hotfix viz compartment
+
+[Issues] 2.26.21 - Mon Jun 29 20:46:45 CEST 2020
+hotfix bidon
+
+[Issues] 2.26.20 - Mon Jun 29 18:31:40 CEST 2020
+solve the aragem export
+
+[Issues] 2.26.19 - Tue Jun 16 17:30:27 CEST 2020
+filter on pathway
+
+[Issues] 2.26.18 - Fri Jun 12 09:45:49 CEST 2020
+combine filter & search
+
+[Issues] 2.26.17 - Tue Jun  9 10:13:19 CEST 2020
+compartment
+
+[Issues] 2.26.16 - Mon Jun  8 09:46:06 CEST 2020
+matcher hotfix
+
+[Issues] 2.26.15 - Thu Jun  4 18:18:16 CEST 2020
+Mise en prod Ludo : compartment names et ecs multiples
+
+[Issues] 2.26.10 - Thu May 28 17:45:57 CEST 2020
+export excel   delete html tag in col title
+
+[Issues] 2.26.9 - Mon May 25 11:58:46 CEST 2020
+identifiers reaction
+
+[Issues] 2.26.8 - Thu May 14 10:16:46 CEST 2020
+request timeout cytoscape
+
+[Issues] 2.26.7 - Thu May 14 08:54:36 CEST 2020
+hotfix cytoscape export with mapping
+
+[Issues] 2.26.6 - Wed May 13 17:53:27 CEST 2020
+cookies
+
+[Issues] 2.26.5 - Wed May 13 16:03:06 CEST 2020
+cookies
+
+[Issues] 2.26.4 - Mon May 11 23:02:19 CEST 2020
+cytoscape request
+
+[Issues] 2.26.3 - Sat May  9 20:06:39 CEST 2020
+remove cookies
+
+[Issues] 2.26.2 - Wed May  6 11:25:51 CEST 2020
+identifiers on change biosource
+
+[Issues] 2.26.1 - Tue May  5 19:26:25 CEST 2020
+cookies & request ajax
+
+[Features] 2.26.0 - Mon Apr 27 09:20:36 CEST 2020
+ids in grid
+
+[Issues] 2.25.1 - Mon Mar 30 15:31:04 CEST 2020
+Fix version 
+
+[Issues] 2.24.17 - Mon Mar 30 12:05:22 CEST 2020
+metaboliteIdentifiers extDBName='SBML'
+
+[Features] 2.24.0 - Thu Mar 19 16:25:42 CET 2020
+New version of MetExploreJava 
+- Improves import
+- Met4J integration
+
+[Issues] 2.24.16 - Fri Feb 28 07:09:41 CET 2020
+Upgrade MetExploreViz to 3.0.13 : To fix pathway labels display 
+Allows to map on visualisation mapping on each conditions
+
+[Issues] 2.24.13 - Thu Feb 13 11:31:24 CET 2020
+MetExploreViz upgrade to 3.0.10 : Add possibility to set nodes label 
+
+[Issues] 2.24.5 - Mon Feb  3 15:37:44 CET 2020
+Upgrade MetExploreViz to 3.0.0 : New mapping features
+
+[Issues] 2.23.17 - Tue Dec 10 16:39:56 CET 2019
+Allows mapping on EC Numbers
+Upgrade MetExploreViz to 2.8.15 to fix bug on import of saved session 
+
+[Issues] 2.23.15 - Wed Nov  6 11:17:13 CET 2019
+hotfix matching new library
+
+[Issues] 2.23.14 - Wed Oct  9 10:01:03 CEST 2019
+hotfix filter when no right metabolite
+
+[Issues] 2.23.13 - Thu Oct  3 08:52:21 CEST 2019
+MetExploreViz Upgrade to 2.8.15 : fix convexhull filtering
+Aliases column not editable
+
+[Issues] 2.23.10 - Thu Sep 26 17:57:33 CEST 2019
+Upgrade MetExploreViz 2.8.14 : Clean code and add information for error tracking
+Useragreement through localstorage
+Remove error_log in php
+Time out  ajax for low connection & delete BioSource message
+
+[Issues] 2.23.6 - Mon Sep 23 09:33:19 CEST 2019
+Fix import of KEGG networks
+
+[Issues] 2.23.4 - Mon Sep 16 14:11:09 CEST 2019
+Update style and fix version
+
+[Issues] 2.23.2 - Mon Sep 16 09:58:12 CEST 2019
+Upgrade MetExploreViz to 2.8.13 : Increase zoom translate min max
+
+[Issues] 2.23.1 - Fri Sep 13 08:46:29 CEST 2019
+Use ext neptune theme
+
+[Issues] 2.22.31 - Fri Sep 13 08:00:56 CEST 2019
+Duplicate biosource change method php
+Remove mapping gpr in grid
+Upgrade MetExploreViz to 2.8.12 : Set way to select mapping 
+
+[Issues] 2.22.27 - Wed Sep 11 15:19:29 CEST 2019
+Upgrade MetExploreViz to 2.8.9 : Optimize network loading
+
+[Issues] 2.22.26 - Tue Sep 10 09:29:50 CEST 2019
+Upgrade MetExploreViz to 2.8.8 : remove heavy weight function to control link unicity
+
+[Issues] 2.22.25 - Wed Sep  4 09:01:45 CEST 2019
+Upgrade MetExploreViz to 2.8.7 : Fix error tracker
+
+
+[Issues] 2.22.24 - Tue Sep  3 17:34:08 CEST 2019
+remove column mapping on change biosource
+
+[Issues] 2.22.23 - Tue Sep  3 15:22:39 CEST 2019
+Allows to load saved mapping in visualisation
+Fix unmapped genes
+
+[Issues] 2.22.22 - Tue Sep  3 14:45:00 CEST 2019
+remove mapping in grid
+
+[Issues] 2.22.20 - Fri Aug 30 15:10:22 CEST 2019
+Improve BH correction with cumulative minimum
+save mapping firefox
+remove mapping in grid
+Upgrade MetExploreViz to 2.8.5:
+- to restrict error tracking on MetExploreViz
+- Fix interaction between MetExplore and MetExploreViz for side compounds
+- Improve interaction between MetExplore and MetExploreViz for Aliases
+- to remove bad link in flux mapping
+- Prevent loading bad links
+- Fix bug to change pathway name
+- Reset font size on mapping
+- New menu to allow several resolution for import
+- Remove border for export
+- Manage mapping with no node map on subnetwork
+- Make input "showvalue" available
+- Manage mapping errors to unlock visualisation if error occurs Track MetExploreViz javascript errors
+- Set app .json to remove cache when version change
+- Manage mapping errors to unlock visualisation if error occursTrack MetExploreViz javascript errors
+
+
+
+
+[Issues] 2.22.8 - Wed Aug 14 15:29:40 CEST 2019
+Fix cache management in MetExploreVIz
+
+[Issues] 2.22.7 - Wed Aug 14 13:49:33 CEST 2019
+Upgrade MetExploreViz : app cache management
+
+[Issues] 2.22.1 - Mon Aug 12 11:04:59 CEST 2019
+Remove old exact search for metabolites
+
+[Features] 2.22.0 - Mon Aug 12 10:26:38 CEST 2019
+Allows to chain several filters 
+
+[Issues] 2.21.5 - Mon Aug 12 08:53:54 CEST 2019
+Fix bug on mathing path
+Fix bug on mapping import
+
+[Issues] 2.21.3 - Fri Jul 26 16:08:06 CEST 2019
+Fix bug on pathway enrichment correction
+
+[Issues] 2.21.2 - Fri Jul 26 13:51:14 CEST 2019
+Fix bug on Mapping divided on column
+
+[Issues] 2.21.1 - Tue Jul 23 09:28:11 CEST 2019
+Upgrade MetExploreViz to 2.6.13 : remove images of metabolites structures & fix saving labels style
+
+[Features] 2.21.0 - Thu Jul 18 17:26:52 CEST 2019
+Match children class lipids in ChEBI ontology
+Improve mapping and pathway enrichment with background set for metabolite 
+Fix :
+Allows to save several matching 
+Re allows to search exact search
+Upgrade MetExploreViz to 2.6.12 : unfix side compounds on mouse over
+
+
+
+[Issues] 2.20.11 - Thu Jul 11 08:54:13 CEST 2019
+Upgrade MetExploreViz to 2.6.11 : Avoid rescale when window resizing  
+
+[Issues] 2.20.6 - Fri May 17 09:45:39 CEST 2019
+Upgrade MetExploreViz to 2.6.6 : Fix keeps coordinates of previous network
+
+[Issues] 2.20.4 - Wed May 15 08:36:26 CEST 2019
+Upgrade MetExploreViz to 2.6.5 : Fix refresh new network #2076 & Fix pan
+
+[Issues] 2.20.3 - Mon May 13 23:07:38 CEST 2019
+Fix link to biocyc website 
+Fix visual pathway enrichment on genes
+
+[Issues] 2.20.1 - Fri May 10 14:19:34 CEST 2019
+Fuzzy search
+Upgrade MetExploreViz to 2.6 : Upgrade D3js to v5
+Add collision management of nodes in visualisation
+
+[Issues] 2.19.15 - Fri Apr 26 08:34:50 CEST 2019
+Manage app cache
+Use gitlab ci/cd
+Hotfix matching chebi
+
+[Issues] 2.19.8 - Mon Mar 18 17:53:24 CET 2019
+matching identifiers
+
+[Issues] 2.19.7 - Mon Mar 18 15:48:09 CET 2019
+Identifier matching &
+Upgrade MetExploreViz to 2.5.2 : Fix bad display of convex hull
+
+[Issues] 2.19.4 - Wed Mar  6 16:45:38 CET 2019
+Improve MetExploreViz initialisation & upgrade MetExploreViz to 2.4.2 : remove Tulip features due to too big file to load
+
+[Features] 2.19.0 - Wed Feb 20 15:28:22 CET 2019
+Set cookies usage & Upgrade MetExploreViz version to 2.4 to use pathways abstraction
+
+[Issues] 2.18.36 - Tue Feb 19 16:03:02 CET 2019
+Fix bug on excel export file and fix alias sorting
+
+[Issues] 2.18.27 - Tue Feb  5 09:33:17 CET 2019
+Add feature flipping
+Debug filter without transport
+Adapt php to php7
+Set release file generation
+Improve curation
+Debug filtering of compartments from metabolites
+
+[Issues] 2.18.24 - Wed Jan 23 16:46:30 CET 2019
+Up to PHP 7
+Gene GPR mapping 
+Test release file generation
+

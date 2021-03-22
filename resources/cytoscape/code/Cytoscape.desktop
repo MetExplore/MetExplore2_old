@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Cytoscape
+Exec=/bin/sh "/home/ludo/Cytoscape/Cytoscape_v2.6.2/Cytoscape"
+Icon=/home/ludo/Cytoscape/Cytoscape_v2.6.2/.install4j/Cytoscape.png
+Categories=Application;

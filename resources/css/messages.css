@@ -1,0 +1,9 @@
+/* css to display short message that appear and disapear*/
+
+.short-message {
+       /*  color: green !important; */
+        font-size: 20px !important;
+        text-align: center !important;
+        padding: 10;
+        border-width: 0;
+}

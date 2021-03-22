@@ -1,0 +1,1 @@
+python .\mapping_lipid\chebi_mapping_json.py \var\tmp\datatest.json \var\tmp\test_metabolites_json.json \var\tmp\data1_out.json \metexplore\Mapping_lipids\conf_json.txt

@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <!-- Google Tag Manager vm-metexplore-test.toulouse.inra.fr-->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5BLQS2P');</script>
+    <!-- End Google Tag Manager -->
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <title>MetExplore</title>
+    <link href="resources/icons/favicon.ico" type="image/x-icon" rel="shortcut icon">
+
+
+    <script>
+        function myFunction(e) {
+            var e = e || window.event;
+
+            // For IE and Firefox
+            if (e) {
+                e.returnValue = 'Any string';
+            }
+
+            // For Safari and Chrome
+            return 'Any string';
+        }
+    </script>
+	<script language="javascript">
+        function getCookieVal(offset) {
+            var endstr=document.cookie.indexOf (";", offset);
+            if (endstr==-1)
+                endstr=document.cookie.length;
+            return unescape(document.cookie.substring(offset, endstr));
+        }
+        function GetCookie (name) {
+            var arg=name+"=";
+            var alen=arg.length;
+            var clen=document.cookie.length;
+            var i=0;
+            while (i<clen) {
+                var j=i+alen;
+                if (document.cookie.substring(i, j)==arg)
+                    return getCookieVal (j);
+                i=document.cookie.indexOf(" ",i)+1;
+                if (i==0) break;}
+            return null;
+        }
+        function DeleteCookie (name) {
+            var exp=new Date();
+            exp.setTime (exp.getTime() - 100000);
+            var cval=GetCookie (name);
+            document.cookie=name+"="+cval+"; expires="+exp.toGMTString();
+        }
+
+        DeleteCookie("ext-gridBioSource");
+        DeleteCookie("ext-gridGene");
+        DeleteCookie("ext-gridProtein");
+        DeleteCookie("ext-gridEnzyme");
+        DeleteCookie("ext-gridReaction");
+        DeleteCookie("ext-gridMetabolite");
+        DeleteCookie("ext-gridPathway");
+	</script>
+
+    <script src="https://cdn.jsdelivr.net/lodash/4.17.4/lodash.min.js"></script>
+
+
+    <!--source scripts-->
+        <!--Libraries must be integrated in app.json and here between "source scripts" tags-->
+        <script src="ext/ext-all-debug.js"></script>
+        <script src="bootstrap.js"></script>
+        <script src="app.js"></script>
+        <script type="text/javascript" src="resources/lib/javascript/googleAnalytics.js"></script>
+        <script type="text/javascript" src="resources/lib/javascript/jquery.min/jquery-1.12.0.min.js"></script>
+        <script type="text/javascript" src="resources/lib/javascript/metExploreViz/metexploreviz.js?2.4.2"></script>
+        <script type="text/javascript" src="resources/lib/javascript/graph.js/graph.js"></script>
+        <script type="text/javascript" src="resources/lib/javascript/kinetic-v5.1.0.min.js"></script>
+        <script type="text/javascript" src="resources/lib/javascript/inchlib-1.2.0.min.js"></script>
+        <script type="text/javascript" src="resources/lib/javascript/fuse.js/src/fuse.min.js"></script>
+        <script type="text/javascript" src="resources/lib/javascript/calcul_enrichment.js"></script>
+        <script type="text/javascript" src="resources/lib/javascript/xlsx.full.min.js"></script>
+        <script type="text/javascript" src="resources/lib/javascript/tsv-to-json.js"></script>
+        <script type="text/javascript" src="resources/lib/javascript/xlsx.full.min.js"></script>
+        <script type="text/javascript" src="resources/lib/javascript/Highcharts-5.0.7/code/highcharts.js"></script>
+        <script type="text/javascript" src="resources/lib/javascript/Highcharts-5.0.7/code/modules/exporting.js"></script>
+        <script type="text/javascript" src="resources/lib/javascript/HighchartsInit.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+    <script src="https://cdn.rawgit.com/benfred/venn.js/master/venn.js"></script>
+
+        <link rel="stylesheet" href="bootstrap.css">
+        <link rel="stylesheet" href="resources/css/baniere.css"/>
+        <link rel="stylesheet" href="resources/css/multiRowGrid.css"/>
+        <link rel="stylesheet" href="resources/css/extjs_gridaction.css"/>
+        <link rel="stylesheet" href="resources/css/networkViz.css"/>
+        <link rel="stylesheet" href="resources/css/customButton.css"/>
+        <link rel="stylesheet" href="resources/css/tabs.css"/>
+        <link rel="stylesheet" href="resources/css/userAndProjectPanels.css"/>
+        <link rel="stylesheet" href="resources/css/windowInfos.css"/>
+        <link rel="stylesheet" href="resources/css/statistics.css"/>
+        <link rel="stylesheet" href="resources/css/messages.css"/>
+    <!--end source scripts-->
+
+    <script id="microloader" data-app="36ee33ea-d56c-4b0b-a494-d651b6059c38" type="text/javascript" src="bootstrap.js"></script>
+
+</head>
+
+<body onbeforeunload="return myFunction(event)">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5BLQS2P"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+</body>
+
+</html>

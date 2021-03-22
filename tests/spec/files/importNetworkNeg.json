@@ -1,0 +1,9 @@
+{
+"linkStyle":{"size":25,"lineWidth":2,"markerWidth":5,"markerHeight":5,"markerInColor":"red","markerOutColor":"green","markerStrokeColor":"black","markerStrokeWidth":"0.7","strokeColor":"black"},
+"reactionStyle":{"height":10,"width":20,"rx":3,"ry":3,"label":"ec","strokeColor":"black","fontSize":8,"strokeWidth":1},
+"generalStyle":{"websiteName":"MetExplore","colorMinMappingContinuous":"yellow","colorMaxMappingContinuous":"blue","maxReactionThreshold":500,"displayLabelsForOpt":false,"displayLinksForOpt":false,"displayConvexhulls":false,"eventForNodeInfo":true,"loadButtonHidden":false,"windowsAlertDisable":false},
+"metaboliteStyle":{"height":10,"width":10,"rx":5,"ry":5,"strokeWidth":1,"fontSize":6,"label":"name","strokeColor":"#b2ae92"}
+"activeMapping":"(json)",
+"duplicatedNodes":[,
+"selectedNodes":[],
+"resizable":false},}}

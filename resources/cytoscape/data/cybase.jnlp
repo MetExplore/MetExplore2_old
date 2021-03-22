@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jnlp codebase="http://localhost/trypanonet/Cytoscape" href="cy1.jnlp">
+  <security>
+    <all-permissions />
+  </security>
+  <information>
+    <title>Cytoscape Webstart</title>
+    <vendor>Cytoscape Collaboration</vendor>
+    <homepage href="http://cytoscape.org" />
+    <offline-allowed />
+  </information>
+  <resources>
+    <j2se version="1.5+" max-heap-size="1024M" />
+    <jar href="cytoscape.jar" /> 
+    <jar href="plugins/addParentNeighbors.jar" /> 
+	<jar href="plugins/advanced-network-merge-2.8.2-jar-with-dependencies.jar" /> 
+	<jar href="plugins/attribute-browser-2.8.2-jar-with-dependencies.jar" /> 
+	<jar href="plugins/automatic-layout-2.8.2-jar-with-dependencies.jar" /> 
+	<jar href="plugins/bioCycPlugin-0.9.jar" /> 
+	<jar href="plugins/biomart-client-2.8.2-jar-with-dependencies.jar" /> 
+	<jar href="plugins/biopax-2.8.2-jar-with-dependencies.jar" /> 
+	<jar href="plugins/CommonAttributes.jar" /> 
+	<jar href="plugins/core-commands-2.8.2-jar-with-dependencies.jar" /> 
+	<jar href="plugins/cpath2-2.8.2-jar-with-dependencies.jar" /> 
+	<jar href="plugins/cpath-2.8.2-jar-with-dependencies.jar" />
+	<jar href="plugins/CyAnimator.jar" /> 
+	<jar href="plugins/editor-2.8.2-jar-with-dependencies.jar" /> 
+	<jar href="plugins/equation-functions-2.8.2-jar-with-dependencies.jar" />
+	<jar href="plugins/EnhancedSearch.jar" />
+	<jar href="plugins/filters-2.8.2-jar-with-dependencies.jar" /> 
+	<jar href="plugins/HiderSlider.jar" /> 
+	<jar href="plugins/linkout-2.8.2-jar-with-dependencies.jar" /> 
+	<jar href="plugins/manual-layout-2.8.2-jar-with-dependencies.jar" /> 
+	<jar href="plugins/metanetter.jar" /> 
+	<jar href="plugins/MetexplorePlugin.jar" /> 
+	<jar href="plugins/namedSelection.jar" /> 
+	<jar href="plugins/NeighborHighlight.jar" /> 
+	<jar href="plugins/ncbi-client-2.8.2-jar-with-dependencies.jar" /> 
+	<jar href="plugins/network-analyzer-2.8.2-jar-with-dependencies.jar" /> 
+	<jar href="plugins/nodeCharts-0.91.jar" /> 
+	<jar href="plugins/OmicsAnalyzer1.0.jar" /> 
+	<jar href="plugins/psi-mi-2.8.2-jar-with-dependencies.jar" /> 
+	<jar href="plugins/quickfind-2.8.2-jar-with-dependencies.jar" /> 
+	<jar href="plugins/ReOrient.jar" /> 
+	<jar href="plugins/rfilters-2.8.2-jar-with-dependencies.jar" /> 
+	<jar href="plugins/sbml-reader-2.8.2-jar-with-dependencies.jar" /> 
+	<jar href="plugins/shortestpath.jar" /> 
+	<jar href="plugins/table-import-2.8.2-jar-with-dependencies.jar" /> 
+	<jar href="plugins/VennDiagram.jar" /> 
+	<jar href="plugins/y-layouts-1.0.1.jar" /> 
+	<jar href="plugins/SessionForWebPlugin.jar" /> 
+   </resources>
+  <!--This starts-up Cytoscape, specify your plugins to load, and other command line arguments.  Plugins not specified here will not be loaded.-->
+  <application-desc main-class="cytoscape.CyMain">
+  <argument>-p</argument>
+    <argument>csplugins.network.merge.NetworkMergePlugin</argument>
+    <argument>-p</argument>
+    <argument>csplugins.layout.LayoutPlugin</argument>
+    <argument>-p</argument>
+    <argument>edu.ucsd.bioeng.idekerlab.biomartclient.BiomartClientPlugin</argument>
+    <argument>-p</argument>
+    <argument>cytoscape.coreplugins.biopax.BiopaxPlugin</argument>
+    <argument>-p</argument>
+    <argument>browser.AttributeBrowserPlugin</argument>
+    <argument>-p</argument>
+    <argument>org.cytoscape.coreplugin.cpath.plugin.CPathPlugIn</argument>
+    <argument>-p</argument>
+    <argument>org.cytoscape.coreplugin.cpath2.plugin.CPathPlugIn2</argument>
+    <argument>-p</argument>
+    <argument>cytoscape.editor.CytoscapeEditorPlugin</argument>
+    <argument>-p</argument>
+    <argument>org.cytoscape.EquationFunctions.EquationFunctionsPlugin</argument>
+    <argument>-p</argument>
+    <argument>filter.cytoscape.CsFilter</argument>
+    <argument>-p</argument>
+    <argument>cytoscape.filters.FilterPlugin</argument>
+    <argument>-p</argument>
+    <argument>linkout.LinkOutPlugin</argument>
+    <argument>-p</argument>
+    <argument>ManualLayout.ManualLayoutPlugin</argument>
+    <argument>-p</argument>
+    <argument>edu.ucsd.bioeng.idekerlab.ncbiclient.NCBIClientPlugin</argument>
+    <argument>-p</argument>
+    <argument>org.cytoscape.coreplugin.psi_mi.plugin.PsiMiPlugIn</argument>
+    <argument>-p</argument>
+    <argument>csplugins.quickfind.plugin.QuickFindPlugIn</argument>
+    <argument>-p</argument>
+    <argument>sbmlreader.SBMLReaderPlugin</argument>
+    <argument>-p</argument>
+    <argument>edu.ucsd.bioeng.coreplugin.tableImport.TableImportPlugin</argument>
+    <argument>-p</argument>
+    <argument>yfiles.YFilesLayoutPlugin</argument>
+    <argument>-p</argument>
+    <argument>csplugins.enhanced.search.EnhancedSearchPlugin</argument>
+    <argument>-p</argument>
+    <argument>de.mpg.mpi_inf.bioinf.netanalyzer.Plugin</argument>
+    <argument>-p</argument>
+    <argument>edu.uchsc.ccp.cytoscape.plugin.hiderslider.HiderSliderPlugin</argument>
+    <argument>-p</argument>
+    <argument>cytoscape.OmicsAnalyzerCytoscape</argument>
+    <argument>-p</argument>
+    <argument>edu.uchsc.ccp.cytoscape.plugin.ReOrient.ReOrientX</argument>
+    <argument>-p</argument>
+    <argument>csplugins.mrsva.shortestpath.ShortestPathPlugin</argument>
+    <argument>-p</argument>
+    <argument>edu.uic.ncdm.venn.VennPlugin</argument>
+    <argument>-p</argument>
+    <argument>bioCycPlugin.BioCycPlugin</argument>
+    <argument>-p</argument>
+    <argument>CyAnimator.CyAnimator</argument>
+    <argument>-p</argument>
+    <argument>SessionForWebPlugin.SessionForWebPlugin</argument>
+    <argument>-p</argument>
+    <argument>namedSelection.NamedSelection</argument>
+     <argument>-p</argument>
+    <argument>commonAttributesPackage.CommonAttributesPlugin</argument>
+    <argument>-p</argument>
+    <argument>neighborHighlight.NeighborHighlighting</argument>
+    <argument>-p</argument>
+    <argument>nodeCharts.NodeCharts</argument>
+    <argument>mex.metanetter.MetaNetter</argument>
+    <argument>-p</argument>
+    <argument>parsebionet.cytoscape.metexplorePlugin.MetexplorePlugin</argument>
+  </application-desc>
+</jnlp>

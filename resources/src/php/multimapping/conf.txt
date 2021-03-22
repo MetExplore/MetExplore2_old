@@ -1,0 +1,10 @@
+name alias: name
+chebi alias: chebi
+formula alias: formula
+kegg alias: kegg
+pubchem alias: pubchem
+hmdb alias: hmdb
+inchi alias: inchi
+smiles alias: smiles
+lipidmaps alias: lipidmap
+swisslipids alias: swisslipids

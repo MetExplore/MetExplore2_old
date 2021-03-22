@@ -1,0 +1,415 @@
+{
+    "name": "MetExplore",
+
+    /**
+        * The relative path to the application's markup file (html, jsp, asp, etc.).
+        */
+    "indexHtmlPath": "index.html",
+
+    /**
+     * Comma-separated string with the paths of directories or files to search. Any classes
+     * declared in these locations will be available in your class "requires" or in calls
+     * to "Ext.require". The "app.dir" variable below is expanded to the path where the
+     * application resides (the same folder in which this file is located).
+     */
+    "classpath": [
+        "app",
+        "ext/src"
+    ],
+
+    /**
+     * Comma-separated string with the paths of directories or files to search. Any classes
+     * declared in these locations will be automatically required and included in the build.
+     * If any file defines an Ext JS override (using Ext.define with an "override" property),
+     * that override will in fact only be included in the build if the target class specified
+     * in the "override" property is also included.
+     */
+    "overrides": [
+        "overrides",
+        "${toolkit.name}/overrides"
+    ],
+
+    /**
+     * The Sencha Framework for this application: "ext" or "touch".
+     */
+    "framework": "ext",
+    "toolkit": "neptune",
+    "theme": "ext-theme-neptune",
+    /**
+     * The toolkit to use. Select either "classic" or "modern".
+     */
+
+    "js": [
+        {
+            "path": "app.js",
+            "bundle": true
+        },
+        {
+            "path": "resources/lib/javascript/googleAnalytics.js",
+            "bundle": true
+        },
+         {
+            "path": "resources/lib/javascript/fuse.js/src/fuse.min.js",
+            "bundle": true
+        },
+        {
+            "path": "resources/lib/javascript/jquery.min/jquery-1.12.0.min.js",
+            "bundle": true
+        },
+        {
+            "path": "resources/lib/javascript/inchlib-1.2.0.min.js",
+            "bundle": true
+        },
+        {
+            "path": "resources/lib/javascript/kinetic-v5.1.0.min.js",
+            "bundle": true
+        },
+        {
+            "path": "resources/lib/javascript/metExploreViz/metexploreviz.js",
+            "bundle": true,
+            "update": "delta"
+        },
+        {
+            "path": "resources/lib/javascript/graph.js/graph.js",
+            "bundle": true
+        },
+        {
+            "path": "resources/lib/javascript/d3.js/d3.min.js",
+            "bundle": true
+        },
+        {
+            "path": "resources/lib/javascript/calcul_enrichment.js",
+            "bundle": true
+        },
+        {
+            "path": "resources/lib/javascript/tsv-to-json.js",
+            "bundle": true
+        },
+        {
+            "path": "resources/lib/javascript/xlsx.full.min.js",
+            "bundle": true
+        },
+        {
+            "path": "resources/lib/javascript/Highcharts-5.0.7/code/highcharts.js"
+        },
+        {
+            "path": "resources/lib/javascript/Highcharts-5.0.7/code/modules/exporting.js"
+        },
+        {
+            "path": "resources/lib/javascript/HighchartsInit.js"
+        }
+    ],
+
+    "css": [
+        {
+            // this entry uses an ant variable that is the calculated
+            // value of the generated output css file for the app,
+            // defined in .sencha/app/defaults.properties
+            "path": "${build.out.css.path}",
+            "bundle": true,
+            "exclude": ["fashion"]
+        }, {
+            "path": "resources/css/baniere.css",
+            "bundle": true
+        }, {
+            "path": "resources/css/multiRowGrid.css",
+            "bundle": true
+        }, {
+            "path": "resources/css/extjs_gridaction.css",
+            "bundle": true
+        }, {
+            "path": "resources/css/networkViz.css",
+            "bundle": true
+        }, {
+            "path": "resources/css/customButton.css",
+            "bundle": true
+        }, {
+            "path": "resources/css/userAndProjectPanels.css",
+            "bundle": true
+        }, {
+            "path": "resources/css/windowInfos.css",
+            "bundle": true
+        }, {
+            "path": "resources/css/statistics.css",
+            "bundle": true
+        }, {
+            "path": "resources/css/messages.css",
+            "bundle": true
+        }
+    ],
+    /**
+         * This option is used to configure the dynamic loader. At present these options
+         * are supported.
+         *
+         */
+    "loader": {
+        // This property controls how the loader manages caching for requests:
+        //
+        //   - true: allows requests to receive cached responses
+        //   - false: disable cached responses by adding a random "cache buster"
+        //   - other: a string (such as the build.timestamp shown here) to allow
+        //     requests to be cached for this build.
+        //
+        "cache": "${build.timestamp}",
+
+        // When "cache" is not true, this value is the request parameter used
+        // to control caching.
+        //
+        "cacheParam": "_dc"
+    },
+
+    /**
+     * Settings specific to production builds.
+     */
+    "production": {
+        "output": {
+            "appCache": {
+                "enable": true,
+                "path": "cache.appcache"
+            }
+        },
+        "loader": {
+            "cache": "${build.timestamp}"
+        },
+        "cache": {
+            "enable": true
+        },
+        "compressor": {
+            "type": "yui"
+        }
+    },
+
+    /**
+     * Settings specific to testing builds.
+     */
+    "testing": {
+    },
+
+    /**
+     * Settings specific to development builds.
+     */
+    "development": {
+        "tags": [
+            // You can add this tag to enable Fashion when using app watch or
+            // you can add "?platformTags=fashion:1" to the URL to enable Fashion
+            // without changing this file.
+            //
+            // "fashion"
+        ]
+    },
+
+    /**
+     * Controls the output structure of development-mode (bootstrap) artifacts. May
+     * be specified by a string:
+     *
+     *      "bootstrap": "${app.dir}"
+     *
+     * This will adjust the base path for all bootstrap objects, or expanded into object
+     * form:
+     *
+     *      "bootstrap": {
+     *          "base": "${app.dir},
+     *          "manifest": "bootstrap.json",
+     *          "microloader": "bootstrap.js",
+     *          "css": "bootstrap.css"
+     *      }
+     *
+     * You can optionally exclude entries from the manifest. For example, to exclude
+     * the "loadOrder" (to help development load approximate a build) you can add:
+     *
+     *      "bootstrap": {
+     *          "manifest": {
+     *              "path": "bootstrap.json",
+     *              "exclude": "loadOrder"
+     *          }
+     *      }
+     *
+     */
+    "bootstrap": {
+        "base": "${app.dir}",
+
+        "microloader": "bootstrap.js",
+        "css": "bootstrap.css"
+    },
+
+    /**
+     * Controls the output directory for build resources.  May be set with
+     * either a string:
+     *
+     *      "${workspace.build.dir}/${build.environment}/${app.name}"
+     *
+     * or an object containing values for various types of build artifacts:
+     *
+     *      {
+     *          "base": "${workspace.build.dir}/${build.environment}/${app.name}",
+     *          "page": {
+     *              "path": "../index.html",
+     *              "enable": false
+     *          },
+     *          "css": "${app.output.resources}/${app.name}-all.css",
+     *          "js": "app.js",
+     *          "microloader": {
+     *              "path": "microloader.js",
+     *              "embed": true,
+     *              "enable": true
+     *          },
+     *          "manifest": {
+     *              "path": "app.json",
+     *              "embed": false,
+     *              "enable": "${app.output.microloader.enable}"
+     *          },
+     *          "resources": "resources",
+     *          "slicer": {
+     *              "path": "${app.output.resources}/images",
+     *              "enable": false
+     *          },
+     *          // Setting the "enable" property of this object to a Truthy value will cause a Application Cache
+     *          // manifest file to be generated based on this files appCache object. This file will then be injected
+     *          // into the index.html file of the built application
+     *          "appCache":{
+     *              "enable": false"
+     *          }
+     *      }
+     *
+     */
+
+    "output": {
+        "base": "${workspace.build.dir}/${build.environment}/${app.name}",
+        "appCache": {
+            "enable": true
+        },
+        "microloader": {
+            "path": "bootstrap.js",
+            "embed": false,
+            "enable": true
+        }
+    },
+
+
+    /**
+    * Controls for localStorage caching
+    *   "cache": {
+    *       // This property controls whether localStorage caching of this manifest file is on or off.
+    *       // if disabled no deltas will be generated during a build and full updates will be disabled
+    *       "enable": false,
+    *
+    *       // This property allows for global toggle of deltas.
+    *       // If set to a string the value will be used as the path to where deltas will be generated relative to you build.
+    *       // If set to a Truthy Value the default path ok "deltas" will be used
+    *       // If set to a Falsey value or if this property is not present deltas will be disabled and not generated.
+    *
+    *       "deltas": "deltas"
+    *   }
+    */
+
+    "cache": {
+        "enable": false,
+        "deltas": true
+    },
+
+
+    /**
+     * Used to automatically generate cache.manifest (HTML 5 application cache manifest)
+     * file when you build.
+     */
+    "appCache": {
+        /**
+         * List of items in the CACHE MANIFEST section
+         */
+        "cache": [
+            "index.html"
+        ],
+        /**
+         * List of items in the NETWORK section
+         */
+        "network": [
+            "*"
+        ],
+        /**
+         * List of items in the FALLBACK section
+         */
+        "fallback": []
+    },
+
+    /**
+     * Extra resources to be copied into the resource folder as specified in the "resources"
+     * property of the "output" object. Folders specified in this list will be deeply copied.
+     */
+    "resources": [
+        {
+            "path": "resources",
+            "output": "shared"
+        },
+        {
+            "path": "${toolkit.name}/resources"
+        },
+        {
+            "path": "${build.id}/resources"
+        }
+    ],
+
+    /**
+     * File / directory name patttern to ignore when copying to the builds. Must be a
+     * valid regular expression.
+     */
+    "ignore": [
+        "(^|/)CVS(/?$|/.*?$)"
+    ],
+
+    /**
+     * Directory path to store all previous production builds. Note that the content
+     * generated inside this directory must be kept intact for proper generation of
+     * deltas between updates.
+     */
+
+    "archivePath": "archive",
+
+
+
+    /**
+     * The space config object is used by the "sencha app publish" command to publish
+     * a version of this application to Sencha Web Application Manager:
+     *
+     *      "manager": {
+     *          // the space id for this application
+     *          "id": 12345,
+     *
+     *          // space host
+     *          "host": "https://api.space.sencha.com/json.rpc",
+     *
+     *          // Either a zip file path or a folder to be zipped
+     *          // this example shows how to publish the root folder for all build profiles
+     *          "file": "${app.output.base}/../",
+     *
+     *          // These may be specified here, but are best specified in your user
+     *          // ~/.sencha/cmd/sencha.cfg file
+     *          "apiKey": "",
+     *          "secret": ""
+     *      }
+     */
+
+    /**
+     * Build Profiles. This object's properties are each a "build profile". You can
+     * add as many as you need to produce optimized builds for devices, themes, locales
+     * or other criteria. Your "Ext.beforeLoad" hook (see index.html) is responsible for
+     * selecting the desired build profile by setting "Ext.manifest" to one of these
+     * names.
+     *
+     *     "builds": {
+     *         "classic": {
+     *             "toolkit": "classic",
+     *             "theme": "theme-neptune"
+     *         },
+     *
+     *         "modern": {
+     *             "toolkit": "modern",
+     *             "theme": "theme-neptune"
+     *         }
+     *     }
+     *
+     */
+
+
+    "id": "36ee33ea-d56c-4b0b-a494-d651b6059c38"
+
+}
